@@ -1,21 +1,35 @@
 body {
     font-family: Arial, sans-serif;
+    background: #997666;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(img/cabecera2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
+h2{
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 30px;
+}
 header {
     width: 100%;
-    background: #333;
-    color: white;
+    color: rgb(2, 2, 2);
     padding: 15px 0;
+    font-size: 30px;
     text-align: center;
 }
+
+
 nav ul {
     list-style: none;
+    color: black;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -42,18 +56,44 @@ nav a {
     width: 100%;
     height: auto;
 }
+.img{
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 5%;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 #mapa {
     width: 30%;
     background: #f4f4f4;
     padding: 10px;
 }
 .ficha {
-    margin-bottom: 20px;
-
-    padding: 10%;
-    border: 1px solid #ccc;
-    margin-right: 15%;
     text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ficha:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+article{
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+article:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 700px) {
     .container {
