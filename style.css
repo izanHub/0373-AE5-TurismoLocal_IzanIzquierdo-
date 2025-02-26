@@ -25,7 +25,17 @@ header {
     font-size: 30px;
     text-align: center;
 }
-
+.nhead{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nhead:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
 
 nav ul {
     list-style: none;
@@ -101,5 +111,8 @@ article:hover{
     }
     .noticias {
         width: 100%;
+    }
+    #mapa {
+        width: 70%;
     }
 }
